@@ -103,7 +103,7 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-brand-dark/95 backdrop-blur-lg py-2 md:py-3 shadow-2xl' : 'bg-transparent py-4 md:py-6'}`}>
-      <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col items-center md:items-start">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col items-center">
         {/* Parent Company Logo - Light Translucent Container */}
         <div className="mb-2 md:mb-4 px-6 md:px-10 py-2 md:py-3 bg-white/80 backdrop-blur-md rounded-full shadow-sm border border-white/20 transition-all hover:bg-white/90">
           <img src={ASSETS.DURATECH_LOGO} alt="DuraTech" className="h-5 md:h-10 object-contain mx-auto" referrerPolicy="no-referrer" />
