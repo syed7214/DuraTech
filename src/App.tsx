@@ -103,10 +103,10 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-brand-dark/95 backdrop-blur-lg py-2 md:py-3 shadow-2xl' : 'bg-transparent py-4 md:py-6'}`}>
-      <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col items-center">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col items-center md:items-start">
         {/* Parent Company Logo - Light Translucent Container */}
         <div className="mb-2 md:mb-4 px-6 md:px-10 py-2 md:py-3 bg-white/80 backdrop-blur-md rounded-full shadow-sm border border-white/20 transition-all hover:bg-white/90">
-          <img src={ASSETS.DURATECH_LOGO} alt="DuraTech" className="h-5 md:h-10 object-contain" referrerPolicy="no-referrer" />
+          <img src={ASSETS.DURATECH_LOGO} alt="DuraTech" className="h-5 md:h-10 object-contain mx-auto" referrerPolicy="no-referrer" />
           <p className="text-[8px] md:text-[10px] text-center uppercase tracking-[0.2em] mt-0.5 md:mt-1 text-brand-dark/80 font-black">Parent Company</p>
         </div>
 
@@ -376,10 +376,10 @@ const Showcase = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <Reveal width="100%">
-            <h2 className="text-5xl md:text-7xl font-bold mb-6 tracking-tighter">Visual Excellence.</h2>
+            <h2 className="text-5xl md:text-7xl font-bold mb-6 tracking-tighter">Our Product.</h2>
           </Reveal>
           <Reveal width="100%" delay={0.4}>
-            <p className="text-xl text-white/60 max-w-2xl mx-auto mb-10">A photographic journey through the MAXBlue™ ecosystem. From high-purity production to global fleet integration.</p>
+            <p className="text-xl text-white/60 max-w-2xl mx-auto mb-10">Discover the quality of MAXBlue™. See our premium 10L solutions designed for the most demanding diesel engines.</p>
           </Reveal>
         </div>
 
@@ -417,7 +417,7 @@ const Sustainability = () => {
   const pillars = [
     { title: "90% NOx Neutral", desc: "Pure ammonia conversion that turns harmful emissions into harmless nitrogen and water vapor for industrial fleets.", icon: <Leaf /> },
     { title: "Zero Waste Pure", desc: "Our de-ionization plants utilize high-efficiency solar energy to produce the purest bottle-grade solutions available.", icon: <Zap /> },
-    { title: "Circular Supply", desc: "Bulk IBC Titan Totes are reclaimed and recycled in a closed-loop system, minimizing logistical waste.", icon: <Globe /> },
+    { title: "Eco-Friendly Packaging", desc: "Our 10L bottles are designed for sustainability, helping you reduce waste while maintaining peak performance.", icon: <Globe /> },
   ];
 
   return (
@@ -628,17 +628,17 @@ const OrderPortal = ({ onSubmit }: { onSubmit: (data: any) => void }) => {
         <div className="grid lg:grid-cols-2 gap-20">
           <div>
             <Reveal width="100%">
-              <h2 className="text-5xl md:text-7xl font-bold mb-8 tracking-tighter">Bulk Logistics Portal.</h2>
+              <h2 className="text-5xl md:text-7xl font-bold mb-8 tracking-tighter">Premium Product Store.</h2>
             </Reveal>
             <Reveal width="100%" delay={0.4}>
-              <p className="text-xl text-white/60 mb-12">Streamlined procurement for national carriers, municipal transit, and industrial hubs. Secure your precision 10L bottle supply chain today.</p>
+              <p className="text-xl text-white/60 mb-12">High-purity urea solutions delivered to your business. Order our precision 10L bottles and ensure your fleet stays compliant and efficient.</p>
             </Reveal>
             
             <div className="grid sm:grid-cols-2 gap-8">
               {[
                 { title: "Priority Dispatch", desc: "Bulk orders receive dedicated logistics priority with 24/7 tracking.", icon: <Zap /> },
                 { title: "Quality Guarantee", desc: "Every bulk shipment includes a batch-specific ISO 22241 certificate.", icon: <ShieldCheck /> },
-                { title: "Global Reach", desc: "Direct tanker delivery to any port or depot across the continent.", icon: <Globe /> },
+                { title: "Direct Delivery", desc: "Fast and secure delivery for all orders, from single cases to bulk pallets, right to your location.", icon: <Globe /> },
               ].map((b, i) => (
                 <motion.div 
                   key={i} 
