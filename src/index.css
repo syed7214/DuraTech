@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #002B5B;
+  --color-brand-red: #D90429;
+  --color-brand-dark: #0B0C10;
+  --color-brand-light: #F8F9FA;
+  
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Outfit', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-brand-dark text-brand-light font-sans antialiased selection:bg-brand-red selection:text-white;
+  }
+}
+
+@layer utilities {
+  .cinematic-gradient {
+    background: linear-gradient(180deg, rgba(11, 12, 16, 0) 0%, rgba(11, 12, 16, 0.8) 100%);
+  }
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+}
